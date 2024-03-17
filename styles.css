@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+}
+
+.banner {
+    flex: 1;
+    position:static;
+    right: 250px;
+}
+
+img {
+    width: 20vw;
+}
+
+.image-banner {
+    height: 95vh;
+}
+.content {
+    flex: 3;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: space-around;
+}
+
+input {
+    width: 15vw;
+    height: 2vh;
+    border: gray solid 1px;
+    border-radius: 5px;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+}
