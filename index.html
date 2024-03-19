@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Project Sign-up Form</title>
-    <script defer>
-        
+    <!-- <script src="./script.js" defer async></script> -->
     </script>
 </head>
 <body>
@@ -46,6 +45,7 @@
                         <div class="flex-individual">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" required>
+                            <p>e.g. johnsmith@website.com</p>
                         </div>
                         <div class="flex-individual">
                             <label for="phone-number">Phone Number</label>
@@ -56,10 +56,12 @@
                         <div class="flex-individual">
                             <label for="password-enter">Password</label>
                             <input type="password" name="password-enter" id="password-enter" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="6" maxlength="32" required>
+                            <p>Between 8-32 Characters, <br>One Uppercase and One Lowercase</p>
                         </div>
                         <div class="flex-individual">
                             <label for="password-confirm">Confirm Password</label>
                             <input type="password" name="password-confirm" id="password-confirm" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="6" maxlength="32" required>
+                            <p></p>
                         </div>
                     </div>
                 </div>

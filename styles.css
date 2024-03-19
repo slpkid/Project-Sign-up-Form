@@ -84,6 +84,7 @@ img {
 .flex-individual {
     display: flex;
     flex-direction: column;
+    max-width: 270px;
 }
 
 input:valid {
@@ -218,4 +219,11 @@ a:visited {
     background-color: #9fa59f;
     border: 1px #323232 solid;
     padding: 3rem;
+}
+
+.form-content p {
+    margin-top: 0.5rem;
+    text-wrap: wrap;
+    font-size: 1rem;
+    color: whitesmoke;
 }
