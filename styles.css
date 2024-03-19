@@ -29,9 +29,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body {
-    line-height: 1;
-}
 ol, ul {
     list-style: none;
 }
@@ -53,6 +50,7 @@ table {
 }
 
 body {
+    line-height: 1;
     display: flex;
     background-color: #DDD0C8;
 }
@@ -79,7 +77,7 @@ img {
     height: 95vh;
     justify-content: space-around;
     margin: auto;
-    color:  #323232;
+    color:  #212121;
     align-self:flex-start;
 }
 
@@ -88,10 +86,19 @@ img {
     flex-direction: column;
 }
 
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid rgb(155, 15, 43);
+}
+
 input {
     width: 18vw;
     max-width: 270px;
     height: 3vh;
+    font-size: 1rem;
     border: #323232 solid 1px;
     border-radius: 5px;
     background-color:whitesmoke;
@@ -142,20 +149,13 @@ legend {
 }
 
 .create-account-button,
-input,
-.form-content {
+input {
     box-shadow: #4e4e4e 2px 2px 2px;
 
 }
 
 h1 {
     font-size: 3rem;
-}
-
-.form-content {
-    padding: 3rem;
-    background-color: #9fa59f;
-    border: 1px #323232 solid;
 }
 
 .sign-up {
@@ -175,12 +175,17 @@ a:visited {
 }
 
 .form-content a:hover {
-    color: #DDD0C8;
+    color: whitesmoke;
 }
 .banner p,
 .banner a {
     color: whitesmoke;
     text-align: center;
+}
+
+.banner a:hover {
+    color: rgb(197, 194, 194);
+
 }
 .credit {
     position:relative;
@@ -206,4 +211,11 @@ a:visited {
 
 .bar-text {
     font-size: 3rem;
+}
+
+.box-shadow {
+    box-shadow: #4e4e4e 2px 2px 2px;
+    background-color: #9fa59f;
+    border: 1px #323232 solid;
+    padding: 3rem;
 }
