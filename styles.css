@@ -1,11 +1,7 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -21,7 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -31,25 +27,29 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
+    content: '';
 	content: none;
 }
 table {
-	border-collapse: collapse;
+    border-collapse: collapse;
 	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -58,12 +58,14 @@ body {
 }
 
 .banner {
-    position:static;
-    right: 250px;
+    max-width: 577px;
+    margin-right: 50px;
 }
 
 img {
-    width: 20vw;
+    width: 25vw;
+    min-width: 577px;
+    max-width:577px;
 }
 
 .image-banner {
@@ -78,6 +80,7 @@ img {
     justify-content: space-around;
     margin: auto;
     color:  #323232;
+    align-self:flex-start;
 }
 
 .flex-individual {
@@ -95,8 +98,8 @@ input {
 }
 
 label {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .row {
@@ -113,7 +116,7 @@ label {
 }
 
 legend {
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 5vh;
 }
 
@@ -123,11 +126,11 @@ legend {
 }
 
 .create-account-button {
-    width: 16em;
-    height: 4em;
+    width: 16rem;
+    height: 4rem;
     background-color:  #323232;
     color: whitesmoke;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bolder;
     border-radius: 25px;
     border: darkgray 2px solid;
@@ -146,17 +149,17 @@ input,
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .form-content {
-    padding: 3em;
+    padding: 3rem;
     background-color: #9fa59f;
     border: 1px #323232 solid;
 }
 
 .sign-up {
-    padding-top: 3em;
+    padding-top: 3rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -173,4 +176,34 @@ a:visited {
 
 .form-content a:hover {
     color: #DDD0C8;
+}
+.banner p,
+.banner a {
+    color: whitesmoke;
+    text-align: center;
+}
+.credit {
+    position:relative;
+    bottom: 70px;
+}
+
+.transparent-bar {
+    position: relative;
+    color:white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top:-55%;
+}
+
+.header-area * {
+    margin-bottom: 2rem;
+}
+
+.header-area h2 {
+    font-size: 2rem;
+}
+
+.bar-text {
+    font-size: 3rem;
 }
