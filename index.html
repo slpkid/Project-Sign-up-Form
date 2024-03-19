@@ -20,22 +20,42 @@
             <h1>Join our community of over two million users!</h1>
         </div>
         <div class="form-content">
-            <form action="">
+            <form action="#" method="post">
                 <legend>Sign up today!</legend>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" required>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number" required>
-                <label for="password-enter">Password</label>
-                <input type="password" name="password-enter" id="password-enter" required>
-                <label for="password-confirm">Confirm Password</label>
-                <input type="password" name="password-confirm" id="password-confirm" required>
+                <div class="form">
+                    <div class="row">
+                        <div class="flex-individual">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="flex-individual">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-individual">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="flex-individual">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-individual">
+                            <label for="password-enter">Password</label>
+                            <input type="password" name="password-enter" id="password-enter" required>
+                        </div>
+                        <div class="flex-individual">
+                            <label for="password-confirm">Confirm Password</label>
+                            <input type="password" name="password-confirm" id="password-confirm" required>
+                        </div>
+                    </div>
+                </div>
+                <button class="create-account-button" type="submit">Create Account</button>
             </form>
-            <button class="create-account-button">Create Account</button>
         </div>
         <div class="sign-up">
             <span>Already have an account? <a href="">Log in here</a></span>
