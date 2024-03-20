@@ -69,16 +69,16 @@ img {
 .image-banner {
     height: 95vh;
 }
+
+.content .header-area {
+    margin-bottom: 50px;
+}
+
 .content {
     max-width: 750px;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    height: 95vh;
-    justify-content: space-around;
     margin: auto;
     color:  #212121;
-    align-self:flex-start;
 }
 
 .flex-individual {
@@ -97,8 +97,10 @@ input:invalid {
 
 input {
     width: 18vw;
+    min-width:207px;
     max-width: 270px;
     height: 3vh;
+    min-height:32px;
     font-size: 1rem;
     border: #323232 solid 1px;
     border-radius: 5px;

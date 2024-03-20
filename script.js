@@ -1,8 +1,8 @@
 let password = document.getElementById("password-enter");
 let passwordConfirm = document.getElementById("password-confirm");
+const submit = document.querySelector(".create-account-button");
 
-password.addEventListener("keydown", (e) => {validatePassword()});
-passwordConfirm.addEventListener("keydown", (e) => {validatePassword()});
+submit.addEventListener("click", (e) => {validatePassword()});
 
 function validatePassword() {
     if (password.value !== passwordConfirm.value) {
@@ -11,7 +11,7 @@ function validatePassword() {
         return
     } else {
     password.setCustomValidity("");
-    password.setCustomValidity("");
+    passwordConfirm.setCustomValidity("");
     return;
     }
 };
